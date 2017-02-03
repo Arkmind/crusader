@@ -1,0 +1,39 @@
+{
+  "name": "crusader",
+  "version": "1.0.0",
+  "description": "An free open sources application for voice control your computer",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Arkmind/crusader.git"
+  },
+  "keywords": [
+    "opensource",
+    "application",
+    "voice",
+    "control",
+    "computing",
+    "gestion",
+    "tts",
+    "stt",
+    "text",
+    "to",
+    "speech",
+    "speech",
+    "to",
+    "text"
+  ],
+  "author": "Arkmind",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Arkmind/crusader/issues"
+  },
+  "homepage": "https://github.com/Arkmind/crusader#readme",
+  "dependencies": {
+    "electron": "^1.4.15"
+  }
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Crusader</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="topnav">
+      <div class="toggle" id="toggle">
+        <i class="after" id="after"></i>
+      </div>
+      <i id="cog" class="fa fa-cog" aria-hidden="true"></i>
+      <i class="separate">|</i>
+      <i id="min" class="fa fa-window-minimize" aria-hidden="true"></i>
+      <i id="rest" class="fa fa-window-restore" aria-hidden="true"></i>
+      <i id="close" class="fa fa-window-close-o" aria-hidden="true"></i>
+    </div>
+    <div class="contener" id="contener">
+      <div class="containt" id="containt"></div>
+      <div class="content-left">
+        <div class="topprofil">
+          <div class="profil">
+            Profil 1
+          </div>
+          <div class="profil">
+            Profil 2
+          </div>
+          <div class="profil">
+            Profil 3
+          </div>
+        </div>
+        <div class="gestion">
+          <div class="commandAdd">
+            <input type="text" placeholder="Entry" id="entry" /><br/>
+            <div>
+              <span>Out :</span>
+              <i id="addout" class="fa fa-plus-square-o" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="command">
+
+          </div>
+        </div>
+      </div>
+      <div class="content-right">
+        <div class="right-top">
+        </div>
+        <div class="right-bottom">
+        </div>
+      </div>
+    </div>
+    <div id="popup" class="popup"></div>
+  </body>
+
+  <script src="../core/process.js"></script>
+  <script>
+    var pages = require('../core/pages.js')
+    document.getElementById("addout").addEventListener("click", function (e) {
+      animations.writePopup(pages.getPage('out'))
+      animations.openPopup();
+    })
+    document.getElementById("cog").addEventListener("click", function (e) {
+      animations.writePopup(pages.getPage('config'))
+      animations.openPopup();
+    })
+  </script>
+</html>

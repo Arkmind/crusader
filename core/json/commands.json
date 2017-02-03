@@ -1,0 +1,30 @@
+{
+  "profil-1" : {
+    "test" : {
+      "entry" : "Test",
+      "out" : "Oui monsieur, test ?"
+    },
+    "hello" : {
+      "entry" : "Bonjour",
+      "out" : "Bonjour monsieur"
+    },
+    "bye" : {
+      "entry" : "Aurevoir",
+      "out" : "A une prochaine monsieur"
+    }
+  },
+  "profil-2" : {
+    "test" : {
+      "entry" : "Test",
+      "out" : "Oui monsieur, test ?"
+    },
+    "hello" : {
+      "entry" : "Bonjour",
+      "out" : "Bonjour monsieur"
+    },
+    "bye" : {
+      "entry" : "Aurevoir",
+      "out" : "A une prochaine monsieur"
+    }
+  }
+}

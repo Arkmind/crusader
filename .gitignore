@@ -17,6 +17,9 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+# Dependencies files
+node_modules/
+
 # =========================
 # Operating System Files
 # =========================
@@ -45,3 +48,4 @@ $RECYCLE.BIN/
 Network Trash Folder
 Temporary Items
 .apdisk
+node_modules/.bin/electron

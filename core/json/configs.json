@@ -1,0 +1,13 @@
+{
+  "lang" : "fr-FR",
+  "voice" : "default",
+  "user" : "Arkmind",
+  "bot" : "Alice",
+  "microphone" : "default",
+  "headphone" : "default",
+  "email" : "example@example.com",
+  "toggle" : "on",
+  "macro" : {
+    "1" : ["shift", "alt", "²"]
+  }
+}
