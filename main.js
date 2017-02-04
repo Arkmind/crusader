@@ -1,4 +1,11 @@
-const {app, BrowserWindow} = require('electron')
+const com = require('./core/com.js')
+
+const {
+  app,
+  BrowserWindow,
+  globalShortcut
+} = require('electron')
+
 const path = require('path')
 const url = require('url')
 
@@ -6,11 +13,15 @@ let win
 
 function createWindow () {
   win = new BrowserWindow({
+    frame: false,
     width: 800,
     height: 600,
-    frame: false,
     minWidth: 600,
     minHeight: 400
+  })
+
+  win.on('closed', () => {
+    win = null
   })
 
   win.loadURL(url.format({
@@ -19,9 +30,6 @@ function createWindow () {
     slashes: true
   }))
   win.webContents.openDevTools()
-  win.on('closed', () => {
-    win = null
-  })
 }
 
 app.on('ready', createWindow)

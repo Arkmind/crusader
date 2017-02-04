@@ -109,6 +109,7 @@ hr {
 }
 
 .popup {
+  overflow: auto;
   z-index: -1;
   top: 15%;
   position: absolute;

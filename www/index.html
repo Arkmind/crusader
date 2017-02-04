@@ -54,16 +54,6 @@
     <div id="popup" class="popup"></div>
   </body>
 
-  <script src="../core/process.js"></script>
-  <script>
-    var pages = require('../core/pages.js')
-    document.getElementById("addout").addEventListener("click", function (e) {
-      animations.writePopup(pages.getPage('out'))
-      animations.openPopup();
-    })
-    document.getElementById("cog").addEventListener("click", function (e) {
-      animations.writePopup(pages.getPage('config'))
-      animations.openPopup();
-    })
-  </script>
+  <script src="js/process.js"></script>
+  <script src="js/pages.js"></script>
 </html>

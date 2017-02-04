@@ -1,4 +1,5 @@
 const remote = require('electron').remote;
+const com = require('./js/com.js')
 
 let toggle = true;
 

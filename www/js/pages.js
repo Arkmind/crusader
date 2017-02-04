@@ -1,12 +1,11 @@
-const fs = require('fs')
+var pages = require('./../core/pages.js')
 
-var pages = {
+document.getElementById("addout").addEventListener("click", function (e) {
+  animations.writePopup(pages.getPage('out'))
+  animations.openPopup();
+})
 
-  getPage: function(name) {
-    var body = fs.readFileSync('./app/pages/' + name + '.html', 'utf8');
-    return body;
-  }
-
-}
-
-module.exports = pages;
+document.getElementById("cog").addEventListener("click", function (e) {
+  animations.writePopup(pages.getPage('config'))
+  animations.openPopup();
+})
